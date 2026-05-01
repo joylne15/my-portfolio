@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = () => {
+const Home = () => {
   return (
     <section className="relative w-full py-20 lg:py-32 overflow-hidden bg-white">
       {/* Background Decoration (Optional Tailwind "Blobs") */}
@@ -56,7 +56,7 @@ const Hero = () => {
              <span className="font-bold text-xl">React</span>
              <span className="font-bold text-xl">Tailwindcss</span>
              <span className="font-bold text-xl">JavaScript</span>
-             <span className="font-bold text-xl">PHP</span>
+             <span className="font-bold text-xl">Python</span>
           </div>
         </div>
 
@@ -65,4 +65,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;

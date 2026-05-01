@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectCard from '../UI/ProjectCard'; // Ensure the path is correct
 
 const Projects = () => {
   const professionalProjects = [
@@ -39,7 +40,7 @@ const Projects = () => {
         
         {/* Header */}
         <div className="mb-16">
-          <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Project Portfolio</h2>
+          <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Technical Proficiency</h2>
           <p className="text-slate-600 mt-2">Professional work and my journey into new technologies like Python.</p>
         </div>
 
@@ -49,28 +50,18 @@ const Projects = () => {
           <div className=" bg-slate-100"></div>
         </div>
 
+        {/* MODIFIED: Using ProjectCard here */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-24">
           {professionalProjects.map((project, index) => (
-            <div key={index} className="group p-8 bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500">
-              <div className="flex justify-between items-start mb-6">
-                <span className="px-3 py-1 bg-white border border-slate-200 text-[10px] font-bold rounded-full text-slate-500 uppercase">
-                  {project.status}
-                </span>
-              </div>
-              <h4 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
-                {project.title}
-              </h4>
-              <p className="text-slate-600 mb-8 leading-relaxed text-sm">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-blue-50 text-blue-600 rounded-md text-xs font-semibold">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+            <ProjectCard 
+              key={index}
+              title={project.title}
+              category={project.category}
+              description={project.description}
+              tags={project.tags}
+              // You can pass the status as a custom prop if you edit ProjectCard
+              // For now, these props match the ProjectCard.jsx we built earlier
+            />
           ))}
         </div>
 

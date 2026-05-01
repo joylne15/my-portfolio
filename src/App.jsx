@@ -1,5 +1,5 @@
 import Navbar from "./components/layout/Navbar";
-import Hero from "./components/section/Hero";
+import Home from "./components/section/Home";
 import About from "./components/section/About";
 import Skills from "./components/section/Skills";
 import Projects from "./components/section/Projects";
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-slate-900">
       <Navbar />
-      <Hero />
+      <Home />
       <About />
       <Skills />
       <Projects />
