@@ -1,4 +1,5 @@
 import React from 'react';
+import background from '../../assets/home.jpg';
 
 const Home = () => {
   return (
