@@ -15,7 +15,7 @@ const Projects = () => {
       category: "Logistics Web App",
       description: "Developing a real-world solution for vehicle transport. This app helps users manage logistics and fleet tracking efficiently within the Tanzanian market.",
       tags: ["React", "State Management", "Client Project"],
-      status: "In Progress"
+      status: "Completed"
     }
   ];
 
