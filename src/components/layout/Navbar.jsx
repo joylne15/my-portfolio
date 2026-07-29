@@ -7,7 +7,7 @@ const Navbar = () => {
         
         {/* Logo/Name */}
         <div className="text-xl font-bold tracking-tight text-blue-600">
-          <a href="/">DevJOEY<span className="text-slate-900">.</span></a>
+          <a href="/">DevJOY<span className="text-slate-900">.</span></a>
         </div>
 
         {/* Navigation Links */}
